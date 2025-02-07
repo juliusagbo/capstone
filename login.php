@@ -138,7 +138,7 @@
                     id="phone" 
                     name="phone" 
                     placeholder="Enter your phone number"
-                    pattern="[0-9]{10}"
+                    pattern="[0-9]{11}"
                     required
                 >
                 <div class="error-message">Please enter a valid phone number</div>
