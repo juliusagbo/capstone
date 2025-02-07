@@ -129,7 +129,7 @@
                     id="mobile" 
                     name="mobile" 
                     placeholder="Enter your mobile number"
-                    pattern="[0-9]{10}"
+                    pattern="[0-9]{11}"
                     required
                 >
                 <div class="error-message">Please enter a valid mobile number</div>
