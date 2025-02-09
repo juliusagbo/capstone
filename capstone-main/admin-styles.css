@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1e1e1e;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li i {
+    font-size: 18px;
+}
+
+.sidebar ul li:hover, .sidebar ul .active {
+    background: #f1c40f;
+    color: black;
+}
+
+.sidebar .logout {
+    margin-top: 50px;
+    color: red;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #f1c40f;
+}
+
+/* Dashboard Cards */
+.dashboard {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Recent Activities Table */
+.recent-activities {
+    margin-top: 30px;
+}
+
+.recent-activities h2 {
+    color: #f1c40f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+table th {
+    background: #222;
+}
+
+.approve, .reject {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.approve {
+    background: #28a745;
+    color: white;
+}
+
+.reject {
+    background: #dc3545;
+    color: white;
+}

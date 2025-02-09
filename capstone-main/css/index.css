@@ -1,0 +1,578 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f1c40f;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.login {
+    color: #f1c40f;
+    border: 1px solid #f1c40f;
+}
+
+.signup {
+    background-color: #f1c40f;
+    color: #121212;
+}
+
+.login:hover {
+    background-color: #f1c40f;
+    color: #121212;
+}
+
+.signup:hover {
+    background-color: #d4ac0d;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?finance,business');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn.primary {
+    background-color: #f1c40f;
+    color: #121212;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #f1c40f;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn.primary:hover {
+    background-color: #d4ac0d;
+}
+
+.btn.secondary:hover {
+    background-color: #f1c40f;
+    color: #121212;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.features h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.features-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* Features Container */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Feature Card */
+.feature-card {
+    background: #222;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: #f1c40f;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Hover Effect */
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: #292929;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 90%;
+    }
+}
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: #121212;
+    color: white;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.how-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* Steps Container */
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Step Card */
+.step-card {
+    background: #1a1a1a;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1c40f;
+    color: #121212;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Hover Effect */
+.step-card:hover {
+    transform: translateY(-10px);
+    background: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-card {
+        width: 90%;
+    }
+}
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testimonials-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: #222;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-text {
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #f1c40f;
+}
+
+.testimonial-author h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.testimonial-author p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    background: #292929;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+}
+/* FAQs Section */
+.faqs {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: #121212;
+    color: white;
+}
+
+.faqs h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.faqs-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* FAQs Container */
+.faqs-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+/* FAQ Item */
+.faq-item {
+    background: #1a1a1a;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* FAQ Question */
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.faq-question:hover {
+    background: #292929;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    opacity: 0.8;
+    border-top: 1px solid #333;
+}
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Contact Info */
+.contact-info {
+    max-width: 400px;
+    text-align: left;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #222;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #f1c40f;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e1b700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
